@@ -7,7 +7,7 @@ console.log('1. Number of partsNeeded:');
 let partsNeeded = 40;
 console.log(partsNeeded);
 // 2. Create a variable call 'supplyChanges' set it to an array containing
-//    the following numbers: 3, 5, -6, 0, 7, 11
+//   the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
 let supplyChanges = [3, 5, -6, 0, 7, 11]
 // 3. Console log the value of the second item in the 'supplyChanges' array
@@ -23,13 +23,55 @@ console.log('5. Adding 25 to supplyChanges.');
 
 console.log(supplyChanges.push(25));
 
+
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
 //    - if it is a positive number (greater than 0), log 'Added x parts.'
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.'
 console.log('6. Showing supplyChanges...');
-
+//
+// for (let x=0; x <supplyChanges.length ; x++) {
+//   console.log(supplyChanges[x]);
+//   if (supplyChanges[x] > 0) {
+//     console.log('Added x parts.');
+//     if (supplyChanges[x] < 0) {
+//       console.log('Removed x parts.');
+//       if (supplyChanges[x] === 0) {
+//         console.log(`No change.`);
+//       }
+//     }
+//   }
+// }
+for (let x=0; x <supplyChanges.length ; x++) {
+  console.log(supplyChanges[x]);
+  if (supplyChanges[x] > 0) {
+    console.log(`Added ${x} parts.`);
+  } else if (supplyChanges[x] === 0) {
+    console.log(`No changes.`);
+  } else if (supplyChanges[x] < 0) {
+    console.log(`Removed ${x} parts.`);
+  }
+}
+// for (let x=0; x <supplyChanges.length ; x++) {
+//   console.log(supplyChanges[x]);
+//   if (supplyChanges[x] > 0) {
+//     console.log(`Added ${x} parts.`);
+//   }
+// }
+// for (let x=0; x <supplyChanges.length ; x++) {
+//   console.log(supplyChanges[x]);
+//   if (supplyChanges[x] === 0) {
+//       console.log('No change.');
+//     }
+//   }
+//
+// for (let x=0; x <supplyChanges.length ; x++) {
+//   console.log(supplyChanges[x]);
+//   if (supplyChanges[x] < 0) {
+//     console.log(`Removed ${x} parts.`);
+//   }
+// }
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
