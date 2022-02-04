@@ -77,7 +77,16 @@ for (let x=0; x <supplyChanges.length ; x++) {
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
-
+for (supply of supplyChanges) {
+  console.log(supply);
+  if (supplyChanges[supply] > 0) {
+    console.log(`Added ${supply} parts.`);
+  } else if (supplyChanges[supply] === 0) {
+    console.log(`No changes.`);
+  } else if (supplyChanges[supply] < 0) {
+    console.log(`Removed ${supply} parts.`);
+  }
+}
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
@@ -93,3 +102,16 @@ for (let i = 0; i < supplyChanges.length; i++) {
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+// box = 7;
+// parts = 572;
+// let box = 0;
+// while (box < 572) {
+//   console.log(box);
+//   box+=7;
+// }
+
+let box = 572;
+while (box > 0) {
+  console.log(box);
+  box-=7;
+}
