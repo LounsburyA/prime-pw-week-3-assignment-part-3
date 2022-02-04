@@ -42,7 +42,7 @@ console.log('6. Showing supplyChanges...');
 //       }
 //     }
 //   }
-// }
+// }  well that doesnt work
 for (let x=0; x <supplyChanges.length ; x++) {
   console.log(supplyChanges[x]);
   if (supplyChanges[x] > 0) {
@@ -81,7 +81,11 @@ console.log('7. Showing supplyChanges with "for of" loop');
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
-
+let total = 0;
+for (let i = 0; i < supplyChanges.length; i++) {
+    total += supplyChanges[i];
+    console.log(total);
+}
 // 9. We have a large stash of parts in our warehouse that we
 //    need to box up and get ready for shipment.
 //    There are 572 parts in total, and each box holds 7 parts.
