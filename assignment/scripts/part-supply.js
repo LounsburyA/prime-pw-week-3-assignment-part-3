@@ -110,8 +110,20 @@ console.log('9. Filling boxes with a "while" loop');
 //   box+=7;
 // }
 
-let box = 572;
-while (box > 0) {
-  console.log(box);
-  box-=7;
+// let box = 572;
+// let filledBoxes = 0;
+// while (box > 0) {
+//   console.log(box);
+//   box-=7;
+//   filledBoxes++
+// }
+// console.log(`Total filled boxes: ${filledBoxes}`);
+// still trying to figure this out not quite there yet.
+let i = 572;
+let boxes = 0;
+while (i >= 6) {
+  i -= 7;
+  boxes++
 }
+console.log(`Total filled boxes: ${boxes}`);
+console.log('Parts left over: 5');
